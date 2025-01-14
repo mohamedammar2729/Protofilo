@@ -1,0 +1,111 @@
+@media (max-width: 575px) {
+    
+    #statistics{
+        min-height: 700px;
+    }
+    
+    #statistics .row{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        height: 90%;
+    }
+
+    /* ====================================
+       ==================================== */
+       #Blog .card-group{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        margin-left: auto ;
+        margin-right: auto ;
+       }
+       #Blog .card::after{
+        
+        display: none;
+    }
+    #Blog .card .card-body{
+        position: relative;
+    }
+       #Blog .card .card-body::after{
+            content: 'travel';
+            position: absolute;
+            width: 60px;
+            height: 25px;
+            background-color: var(--main-color);
+            border-radius: 5px;
+            top: -10px;
+            left: 50%;
+            right: 50%;
+            transform: translateX(-50%);
+            z-index: 3;
+            color: #fff;
+            text-align: center;
+        
+       }
+       /* ==================== */   
+        /* contact */
+        #Contact{
+            min-height: 1350px;
+        }
+        #Contact .container{
+            width: 95% !important;
+            display: flex;
+            flex-direction: column !important;
+           
+            padding-left: 10px;
+        }
+        #Contact .container :is(form , .contact-way){
+            width: 100% !important;
+            margin-bottom: 40px;
+        }
+        #Contact footer{
+            
+            top: 90%;
+            
+        }
+
+}
+/* ======================================== */
+
+@media screen and (min-width:576px) and (max-width:767px) {
+    /* ==================== */   
+        /* contact */
+        #Contact{
+            min-height: 1350px;
+        }
+        #Contact .container{
+            width: 90% !important;
+            display: flex;
+            flex-direction: column !important;
+            
+            
+        }
+        #Contact .container :is(form , .contact-way){
+            width: 100% !important;
+            margin-bottom: 50px !important;
+        }
+        #Contact footer{
+            
+            top: 93%;
+            
+        }
+}
+
+/*  ======================================= */
+@media screen  and (min-width:768px) and (max-width:991px){
+
+    #Blog .card-group{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        
+    }
+    
+    #Blog .card{
+        width: 50% !important;
+    }
+}
